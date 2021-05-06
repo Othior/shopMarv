@@ -1,0 +1,74 @@
+.container_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0vh 10vw;
+    font-size: 20px;
+    margin: 2rem 0rem;
+}
+.block_article_details{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+.image_article_details{
+    width:30rem;
+    height: 30rem;
+}
+.contenu_article_details{
+    width: 50vw;
+}
+.prix_article_details{
+    text-align: left;
+    background-color: #0D0D0D;
+    padding: 0rem 1rem;
+    color: white;
+    margin: 1rem 0rem;
+}
+.pointure_article_details{
+    margin: 1rem 0rem;
+}
+.description_article_details{
+    width: 20rem;
+    margin: 1rem 0rem;
+    text-align: justify;
+}
+.btn_achat_article_details{
+    border: 1px solid white;
+    background: #0D0D0D;
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+    transition: 0.8s;
+}
+.btn_achat_article_details:hover{
+    border: 1px solid  #0D0D0D;
+    background: white;
+    color: #0D0D0D;
+    transition: 0.8s;
+}
+.fa-credit-card::before{
+    margin-left: 1rem;
+}
+
+
+
+
+
+
+.article_info_magasin , .contenu_info_magasin{
+    margin: 2rem 0rem;
+}
+
+.contenu_info_magasin{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 20rem;
+}
+.contenu_info_magasin i {
+    margin-right: 1rem;
+}

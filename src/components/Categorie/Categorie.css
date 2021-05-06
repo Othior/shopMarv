@@ -1,0 +1,10 @@
+.selectArticle{
+    padding: 1rem;
+    color: white;
+    background: #0D0D0D;
+    outline: none;
+    font-size: 20px;
+}
+.optionArticle{
+    padding: 1rem;
+}

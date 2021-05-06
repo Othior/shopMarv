@@ -1,0 +1,55 @@
+.container_list_panier{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0rem;
+}
+.block_list_panier{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #A6A6A6;
+    padding: 1rem 0rem;
+}
+.image_list_panier{
+    width: 15rem;
+    height: 15rem;
+}
+.contenu_list_panier{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    width: 50rem;
+}
+.titre_list_panier{
+    margin-right: 1rem;
+    width: 16rem;
+    text-align: center;
+}
+.prix_list_panier{
+    font-size: 20px;
+}
+.quantite_list_panier{
+    margin: 0rem 1rem;
+}
+
+.text_list_panier{
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.block_ajouter_quantite{
+    font-size: 20px;
+}
+.btn_decrement_quantite , .btn_increment_quantite{
+    background-color: #0D0D0D;
+    border: 1px solid white;
+    color:white;
+    transition: 0.8s;
+}
+.btn_decrement_quantite:hover ,.btn_increment_quantite:hover{
+    background-color: white;
+    border: 1px solid #0D0D0D;
+    color: #0D0D0D;
+    transition: 0.8s;
+}
