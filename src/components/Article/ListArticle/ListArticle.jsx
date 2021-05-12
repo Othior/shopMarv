@@ -34,15 +34,15 @@ function ListArticle() {
             <div className="block_article" >
             {articles.map((article,index) => (
                 <div className="block_article_container"  key={`article_` + index} >
-                                <img className="image_article" src={article.content.imageUrl} alt={article.content.titre} />
-                                <div className="contenu_article">
-                                    <h3 className="titre_article">{article.content.titre}</h3>
-                                    <span className="prix_article">{article.content.prix}€</span>
-                                </div>
-                            <Link to={"/article/" + article.id} className="lien_article" id={article.id} onClick={ (e) => handlerSendIdArticle(e) }>
-                                Voir plus
-                            </Link>
+                        <img className="image_article" src={article.content.imageUrl} alt={article.content.titre} />
+                        <div className="contenu_article">
+                            <h3 className="titre_article">{article.content.titre}</h3>
+                            <span className="prix_article">{article.content.prix}€</span>
                         </div>
+                    <Link to={"/article/" + article.id} className="lien_article" id={article.id} onClick={ (e) => handlerSendIdArticle(e) }>
+                        Voir plus
+                    </Link>
+                </div>
                     ))
             }
             </div>
