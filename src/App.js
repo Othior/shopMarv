@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter  as Router, Switch ,Route } from 'react-router-dom';
 import Accueil from './components/Accueil/Accueil';
@@ -7,6 +6,7 @@ import AddArticle from './components/Article/AddArticle/AddArticle';
 import ListArticle from './components/Article/ListArticle/ListArticle';
 import DetailsArticle from './components/Article/DetailsArticle/DetailsArticle';
 import Panier from './components/Panier/Panier';
+import Login from './components/Auth/Login';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
             <Panier />
           </Route>
           <Route exact path="/auth">
-
+            <Login />
           </Route>
           <Route exact path="/article/:id" component={DetailsArticle} />
         </Switch>

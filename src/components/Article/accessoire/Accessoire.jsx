@@ -23,8 +23,8 @@ function Accessoire() {
     }, [])
 
     return (
-        <div>
-            <h2 className="titre_roller">Roller</h2>
+        <>
+            <h2 className="titre_roller">Accessoire</h2>
             <div className="content_roller">
                 {
                     accessoire.map((accessoire,index) => (
@@ -41,7 +41,7 @@ function Accessoire() {
                     ))
                 }
             </div>
-        </div>
+        </>
     )
 }
 

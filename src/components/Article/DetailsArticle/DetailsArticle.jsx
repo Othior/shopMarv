@@ -7,22 +7,9 @@ function DetailsArticle() {
 
     const { id } = useParams(JSON.parse(localStorage.getItem("articleId")));
     const [article, setArticle] = useState([])
-    const [panier, setPanier] = useState(JSON.parse(localStorage.getItem("panier")))
+    const panier = useState(JSON.parse(localStorage.getItem("panier")))
     const total = []
     const dataPanierTotal = []
-    const [dataPanier,setDataPanier] = useState([])
-
-    const getOne = () => {
-        console.log(JSON.parse(localStorage.getItem("articleId")));
-        db.collection("Article").get().then(querySnapshot => {
-            querySnapshot.forEach( doc => {
-                if(doc.id === id){
-                    total.push(doc.data())
-                }
-            })
-            setArticle(total);
-        })
-    }
 
     const ajouterPanier = (value) => {
 
@@ -39,6 +26,18 @@ function DetailsArticle() {
 
         localStorage.setItem("panier",JSON.stringify(dataPanierTotal));
 
+    }
+
+    const getOne = () => {
+        console.log(JSON.parse(localStorage.getItem("articleId")));
+        db.collection("Article").get().then(querySnapshot => {
+            querySnapshot.forEach( doc => {
+                if(doc.id === id){
+                    total.push(doc.data())
+                }
+            })
+            setArticle(total);
+        })
     }
 
     useEffect(() => {

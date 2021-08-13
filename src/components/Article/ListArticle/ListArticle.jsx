@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { db } from '../../../firebase/firebase';
-import Categorie from '../../Categorie/Categorie';
 import './ListArticle.css'
 
 function ListArticle() {

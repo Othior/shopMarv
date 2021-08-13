@@ -22,13 +22,17 @@ function Roller() {
         
     }
 
+    const handlerSendIdArticle = (e) => {
+        
+    }
+
     
     useEffect(() => {
         fetchAllRoller();
     }, [])
 
     return (
-        <div>
+        <>
             <h2 className="titre_roller">Roller</h2>
             <div className="content_roller">
                 {
@@ -39,14 +43,15 @@ function Roller() {
                                     <h3 className="titre_article">{roller.contenu.titre}</h3>
                                     <span className="prix_article">{roller.contenu.prix}€</span>
                                 </div>
-                            {/* <Link to={"/article/" + roller.id} className="lien_article" id={roller.id} onClick={ (e) => handlerSendIdArticle(e) }>
+                            <Link to={"/article/" + roller.id} className="lien_article" id={roller.id} onClick={ (e) => handlerSendIdArticle(e) }>
                                 Voir plus
-                            </Link> */}
+                            </Link>
                         </div>
                     ))
                 }
             </div>
-        </div>
+            
+        </>
     )
 }
 

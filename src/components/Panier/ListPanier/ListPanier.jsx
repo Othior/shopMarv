@@ -4,7 +4,7 @@ import "./ListPanier.css"
 
 function ListPanier() {
 
-    const [item, setItem] = useState(JSON.parse(localStorage.getItem("panier")))
+    const item = useState(JSON.parse(localStorage.getItem("panier")))
     
     const decrement = (value) => {
         if(value < 0){

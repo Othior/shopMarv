@@ -1,4 +1,4 @@
-import React, { createRef, useRef, useState } from 'react';
+import React, {  useRef, useState } from 'react';
 import { db } from '../../../firebase/firebase';
 import Categorie from '../../Categorie/Categorie';
 import "./AddArticle.css"

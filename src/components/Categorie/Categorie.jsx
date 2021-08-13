@@ -20,6 +20,7 @@ function Categorie({categorie}) {
     useEffect(() => {
         fetchAllCategories();
     }, [])
+    
     const handler = () => {
         categorie(selectRef.current.value);
     }
