@@ -12,6 +12,7 @@ function AddArticle() {
     const imageUrl = useRef();
     const [categorie , setCategorie] = useState("")
     const description = useRef();
+    
     const handleForm = () => {
         db.collection("Article").doc().set({
             titre: titre.current.value,

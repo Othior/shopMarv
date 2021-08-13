@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 
 function BtnQuantite({quantite,increment,decrement}) {
     console.log("quantite =>",quantite);
-    console.log("increment => ",increment);
-    console.log("decrement => ",decrement);
     const [quantiter, setQuantiter] = useState(quantite)
 
     return (

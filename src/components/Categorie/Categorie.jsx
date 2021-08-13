@@ -5,10 +5,10 @@ import "./Categorie.css"
 function Categorie({ categorie }) {
 
     const [categories, setCategories] = useState([]);
-    const total = [];
     const selectRef = useRef();
 
     useEffect(() => {
+        const total = [];
         const fetchAllCategories = () => {
             db.collection("Categories").get().then(querySnapshot => {
                 querySnapshot.forEach(doc => {

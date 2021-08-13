@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, {  } from 'react'
 import BtnQuantite from '../BtnQuantite/BtnQuantite'
 import "./ListPanier.css"
 
 function ListPanier() {
 
-    const item = useState(JSON.parse(localStorage.getItem("panier")))
+    const item = JSON.parse(localStorage.getItem("panier"))
     
     const decrement = (value) => {
         if(value < 0){

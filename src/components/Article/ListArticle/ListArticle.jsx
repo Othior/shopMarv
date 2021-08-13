@@ -5,16 +5,15 @@ import './ListArticle.css'
 
 function ListArticle() {
 
-    const total = [];
     const [articles, setArticles] = useState([]);
-
-
 
     const handlerSendIdArticle = (e) => {
         localStorage.setItem("articleId", JSON.stringify(e.target.id));
+        console.log("id => ",e.target.id)
     }
 
     useEffect(() => {
+        const total = [];
         const fetchAll = () => {
             db.collection("Article").get().then(querySnapchot => {
                 querySnapchot.forEach(doc => {
